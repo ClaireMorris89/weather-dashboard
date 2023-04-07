@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8"/>
+     <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />  -->
     <link rel="stylesheet" href="./Assets/style.css">
     <title>Weather Dashboard</title>
 </head>
@@ -18,13 +19,16 @@
     <h2>Search for a City:</h2>
     <input id='search' type='text'><br>
     <button>Search</button>
+    <div id="search-history"></div>
 </aside>
 
 <section>
-    <div id="current-weather">current weather here</div>
+    <div class="current-weather" id="current-date">
+
+    </div>
 
     <h3>5-day Forecast:</h3>
-    <div id="forecast">forecast cards here</div>
+    <div id="forecast"></div>
 </section>
 
 
@@ -41,8 +45,9 @@
 
 
 
-
 </main>
-
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+  integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="./Assets/script.js"></script>
 </html>
